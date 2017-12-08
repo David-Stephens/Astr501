@@ -1,0 +1,32 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Cyburt} et~al.,}{{Cyburt}
+  et~al.}{2010}]{cyburt:10}
+{Cyburt} R.~H.,  et~al., 2010, \mn@doi [\apjs] {10.1088/0067-0049/189/1/240},
+  \href {http://cdsads.u-strasbg.fr/abs/2010ApJS..189..240C} {189, 240}
+
+\bibitem[\protect\citeauthoryear{{Rogers}, {Swenson}  \& {Iglesias}}{{Rogers}
+  et~al.}{1996}]{1996ApJ...456..902R}
+{Rogers} F.~J.,  {Swenson} F.~J.,   {Iglesias} C.~A.,  1996, \mn@doi
+  [Astrophysical Journal] {10.1086/176705}, \href
+  {http://adsabs.harvard.edu/abs/1996ApJ...456..902R} {456, 902}
+
+\makeatother
+\end{thebibliography}

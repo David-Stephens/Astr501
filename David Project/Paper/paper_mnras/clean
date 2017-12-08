@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "rm -f *.aux *.log *.blg *.bbl *.toc"
+rm -f *.aux *.log *.blg *.bbl *.toc
+
+echo "rm paper.pdf - press return to continue"
+read
+rm -f paper.pdf
+
+if [ -f paper.synctex.gz ]
+then
+	rm paper.synctex.gz
+fi

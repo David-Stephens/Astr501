@@ -11942,6 +11942,7 @@ a.anchor-link {
 <li><strong>Diffusion Coefficient Changes and Motivation</strong><ul>
 <li>Mixing Equation</li>
 <li>Peak Neutron Densities, Temperature and $^{22}$Ne($\alpha , n$)$^{25}$Mg</li>
+<li>$^{25}$Mg Production</li>
 <li>Hydro Diffusion Coefficient (Jones)</li>
 <li>Convective Time Scale</li>
 </ul>
@@ -11958,9 +11959,30 @@ a.anchor-link {
 <ul>
 <li><strong>Results</strong><ul>
 <li>Jones Diffusion - Subtime 100</li>
-<li>Modified Jones Diffusion</li>
 </ul>
 </li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>Conclusions</strong></li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><strong>References</strong></li>
 </ul>
 
 </div>
@@ -11992,7 +12014,7 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="SiC-Pre-solar-Grains-$^{96}$Zr-/-$^{94}$Zr-and-the-$^{95}$Zr-Branching">SiC Pre-solar Grains $^{96}$Zr / $^{94}$Zr and the $^{95}$Zr Branching<a class="anchor-link" href="#SiC-Pre-solar-Grains-$^{96}$Zr-/-$^{94}$Zr-and-the-$^{95}$Zr-Branching">&#182;</a></h1><ul>
 <li>Measurements of $^{96}$Zr / $^{94}$Zr taken from pre solar SiC grains by Barzyk et al. (2007) and compared with AGB models from Battino et al. (2016)</li>
-<li>SiC grains only form in conditions with C/O ~ 1, consistent with AGB envelope</li>
+<li>SiC grains only form in conditions with C/O ~ 1, consistent with matter from AGB envelope</li>
 <li>Uses $\delta(^{96}Zr/^{94}Zr)$ to represent results, defined as:</li>
 <li>$\delta(^{96}Zr/^{94}Zr) = [(\frac{^{96}Zr}{^{94}Zr}) / (\frac{^{96}Zr_{\odot}}{^{94}Zr_{\odot}}) - 1] \times 1000$</li>
 </ul>
@@ -12013,7 +12035,7 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12034,7 +12056,7 @@ a.anchor-link {
 <h1 id="$^{128}$Xe-/-$^{130}$Xe-and-the-$^{127}$I-Branching">$^{128}$Xe / $^{130}$Xe and the $^{127}$I Branching<a class="anchor-link" href="#$^{128}$Xe-/-$^{130}$Xe-and-the-$^{127}$I-Branching">&#182;</a></h1><p><img src="xe.png" alt="title">
 (Reifarth et al  (2004))</p>
 <ul>
-<li>$^{128}$I either $\beta^{-}$ decays to $^{128}$Xe or $\beta^{+}$ decays to $^{128}$Te. This process is very sensitive to temperature with higher temperatures leading to more $\beta^{+}$ decays and lower $^{128}$Xe / $^{130}$Xe due to the high neutron densities</li>
+<li>$^{128}$I either $\beta^{-}$ decays to $^{128}$Xe or $\beta^{+}$ decays to $^{128}$Te. This process is very sensitive to temperature with higher temperatures leading to more $\beta^{+}$ decays and lowers the $^{128}$Xe / $^{130}$Xe ratio due to the high neutron densities. The ratio of the two is not sensitive to the pulse driven convection zones neutron density environment</li>
 </ul>
 
 </div>
@@ -12045,6 +12067,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-Used">Data Used<a class="anchor-link" href="#Data-Used">&#182;</a></h1><p>For all of the analysis that is done, a ZAMS 2M$_{\odot}$ stellar model with solar metallicty (Z = 0.02), is used. The stellar models that were used were taken from the set1ext, set1.2, data from NuGrid (Ritter et al., 2017) which were computed using the MESA (Paxton et al., 2011) stellar evolution code. The nucleosynthesis was computed with the NuGrid mppnp code.</p>
+<p>The tests done were only with a single He-flash pulse driven convection zone which was the third last one as they have a larger maximum temperature within the convection zone.</p>
 
 </div>
 </div>
@@ -12147,11 +12170,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="Time_scale.png" alt="title"></p>
+<p><img src="Time scale.png" alt="title"></p>
 <ul>
-<li><p>The amount of subtime stepping from the MESA model steps in order to resolve a convective time scale averages close to 100</p>
+<li><p>The amount of subtime stepping from the MESA model steps in order to resolve a convective time scale averages close to 100.</p>
 </li>
-<li><p>This cannot be run with mppnp over all models, so only 100 models are used near the highest temperatures</p>
+<li><p>This cannot be run with mppnp over all models, so only a portion of models are used near the highest temperatures.</p>
 </li>
 </ul>
 
@@ -12175,7 +12198,31 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Jones-Diffusion---Subtime-100">Jones Diffusion - Subtime 100<a class="anchor-link" href="#Jones-Diffusion---Subtime-100">&#182;</a></h1><ul>
-<li>The subtime steps were taken from models </li>
+<li>100 subtime steps were used inbetween models 53620 and 53900. $\delta(^{96}Zr/^{94}Zr)$ and $^{128}$Xe / $^{130}$Xe were compared between the MESA model and Jones model with no subtime steps and 100 subtime steps</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="JonesS1 zr.png" alt="title"></p>
+<ul>
+<li>The $\delta(^{96}Zr/^{94}Zr)$ is larger than the MESA model with the Jones diffusion coefficient when there are no subtime steps but is smaller when 100 subtime steps is used. This cannot directly be related to work done in Battino et al. (2016) as their plot is the final $\delta(^{96}Zr/^{94}Zr)$ for the AGB envelope. The values calculated here are just for one thermal pulse.</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="JonesS1_xe2.png" alt="title"></p>
+<ul>
+<li>With less $^{127}$I at the highest temperatures, more $^{128}$I decays to $^{128}$Te rather than $^{128}$Xe. This effect is seen at the highest temperature model numbers (near 53620) but eventually converges to a similar value after the convection zone dies out.</li>
 </ul>
 
 </div>
@@ -12185,7 +12232,24 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Bibliography">Bibliography<a class="anchor-link" href="#Bibliography">&#182;</a></h1><p>Barzyk, J. G., Savina, M. R., Davis, A. M., et al. 2006, NewAR, 50, 587</p>
+<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><ul>
+<li>The $\delta(^{96}Zr/^{94}Zr)$ computed for the third last thermal pulse shows minor deviations from the MESA model. However, from Battino et al. (2016), the $\delta(^{96}Zr/^{94}Zr)$ does not need to get much smaller to match with observations. A measurement of its impact after dilution into the AGB envelope should be made so that comparisons can be made with the results of Battino et al (2016)</li>
+</ul>
+<ul>
+<li>The $^{128}$Xe / $^{130}$Xe ratio did not vary much from the MESA models after the convection zone died out. </li>
+</ul>
+<ul>
+<li>The convergence of a solution was not tested completely. It was based off the assumption of resolving to the convective time scale. </li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1><p>Barzyk, J. G., Savina, M. R., Davis, A. M., et al. 2006, NewAR, 50, 587</p>
 <p>Battino, U., Pignatari, M., Ritter, C., Herwig, F., Denisenkov, P., Den Hartogh, J. W.,
 Trappitsch, R., Hirschi, R., Freytag, B., Thielemann, F., and Paxton, B. (2016). Applica-
 tion of a Theory and Simulation-based Convective Boundary Mixing Model for AGB Star
@@ -12193,6 +12257,8 @@ Evolution and Nucleosynthesis. , 827:30.</p>
 <p>Jones, S., Andrassy, R., Sandalski, S., Davis, A., Woodward, P., and Herwig, F. (2017).
 Idealized hydrodynamic simulations of turbulent oxygen-burning shell convection in 4π
 geometry. , 465:2991–3010.</p>
+<p>Paxton, B., Bildsten, L., Dotter, A., Herwig, F., Lesaffre, P., and Timmes, F. (2011). Mod-
+ules for Experiments in Stellar Astrophysics (MESA). , 192:3.</p>
 <p>Reifarth, R., Käppeler, F., Voss, F., Wisshak, K., Gallino, R., Pignatari, M., and Straniero,
 O. (2004). 128 Xe and 130 Xe: Testing He-Shell Burning in Asymptotic Giant Branch Stars.
 , 614:363–370.</p>

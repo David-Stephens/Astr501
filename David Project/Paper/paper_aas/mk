@@ -1,0 +1,52 @@
+#!/bin/bash
+
+function check_okay {
+        if [ $? -ne 0 ]
+        then
+                echo
+                echo "processing failed..."
+                exit 1
+        fi
+}
+
+# two options: -h for help, -l to use latex instead of pdflatex
+if [ "$1" = "-h" ]
+then
+	echo usage $0 [-l]
+	echo -l means use latex
+	exit 0
+fi
+
+if [ "$1" = "-l" ]
+then
+        latex=`which latex`
+        echo "Oh `id -un`, you're not using plain latex again..."
+        sleep 2
+else
+	latex=`which pdflatex`
+fi
+bibtex=`which bibtex`
+
+$latex paper
+check_okay
+$bibtex paper
+check_okay
+$latex paper
+check_okay
+$latex paper
+check_okay
+$latex paper
+echo
+echo "Processing finished. Here are the bibtex warnings:"
+grep Warning paper.blg
+if [ $? -ne 0 ]
+then
+        echo "none"
+fi
+echo
+echo "Here are the (pdf)latex warnings."
+grep -i --after-context=1 --regexp="Warning:" paper.log
+if [ $? -ne 0 ]
+then
+        echo "none"
+fi

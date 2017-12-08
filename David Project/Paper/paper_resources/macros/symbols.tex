@@ -1,0 +1,91 @@
+% symbols for commonly used expressions in the paper.  The point is to define these for 
+% consistent notation.  Before defining or using an expression, check that someone hasn't defined it already.
+\newcommand{\epsnuc}{\ensuremath{\epsilon_{\mathrm{nuc}}}}	% nuclear heating rate
+\newcommand{\epsgrav}{\ensuremath{\epsilon_{\mathrm{grav}}}} % gravitational heating rate
+\newcommand{\epsnu}{\ensuremath{\epsilon_{\mathrm{\nu}}}} % neutrino losses
+\newcommand{\Teff}{\ensuremath{T_{\!\mathrm{eff}}}}	% effective temperature
+\newcommand{\teff}{\Teff}
+\newcommand{\Ledd}{\ensuremath{L_{\mathrm{Edd}}}} % Eddington Luminosity
+\newcommand{\logg}{\ensuremath{\log g}}	% log surface gravity
+\newcommand{\Tc}{\ensuremath{T_{\mathrm{\!c}}}} % central temperature
+\newcommand{\Pc}{\ensuremath{P_{\mathrm{\!c}}}} % central pressure
+\newcommand{\rhoc}{\ensuremath{\rho_{\mathrm{c}}}} % central density
+\newcommand{\CP}{\ensuremath{C_{\!P}}} % specific heat at constant pressure
+\newcommand{\Mdot}{\ensuremath{\dot{M}}} % mass-loss rate
+\newcommand{\Mc}{\ensuremath{M_{\rm c}}} % core mass
+\newcommand{\Mm}{\ensuremath{M_{\rm m}}} % modeled mass
+\newcommand{\Rc}{\ensuremath{R_{\rm c}}} % core radius
+\newcommand{\Lc}{\ensuremath{L_{\rm c}}} % core luminosity
+\newcommand{\Lacc}{\ensuremath{L_{\rm acc}}} % accretion luminosity
+
+% opacity stuff
+\newcommand{\kappath}{\ensuremath{\kappa_{\mathrm{th}}}} % opacity for thermal radiation orig.\ in planet
+\newcommand{\kappav}{\ensuremath{\kappa_{\mathrm{v}}}} % opacity for irradiation from star
+
+% for correction between baryon densities and mass-energy densities
+\newcommand{\nB}{\ensuremath{n_{\mathrm{B}}}}	% baryon density
+%
+% symbols from the first instrument paper
+\newcommand{\alphaMLT}{\ensuremath{\alpha_{\mathrm{MLT}}}}	% mixing length parameter
+\newcommand{\chirho}{\ensuremath{\chi_{\rho}}}	% $(\partial\ln P/\partial\ln\rho)_T$
+\newcommand{\chiT}{\ensuremath{\chi_{\raisebox{-2pt}{$\scriptstyle T$}}}}	% $(\partial\ln P/\partial\ln T)_{\rho}$
+\newcommand{\Gammaone}{\ensuremath{\Gamma_{\!1}}} % $ (\partial\ln P/\partial \ln\rho)_S$
+\newcommand{\Dov}{\ensuremath{D_{\mathrm{ov}}}}	% overshoot diffusion coefficient
+\newcommand{\nablaad}{\ensuremath{\nabla_{\!\mathrm{ad}}}}	% adiabatic temperature gradient
+\newcommand{\nablarad}{\ensuremath{\nabla_{\!\mathrm{rad}}}}	% radiative temperature gradient
+\newcommand{\nablaT}{\ensuremath{\nabla_{\!T}}}	% actual temperature gradient
+\newcommand{\nablaL}{\ensuremath{\nabla_{\mathrm{\!L}}}}	% Ledoux criterion
+\newcommand{\scaleheight}{\ensuremath{\lambda_P}}	% pressure scale height
+\newcommand{\Pgas}{\ensuremath{P_{\!\!\mathrm{gas}}}}	% gas pressure
+\newcommand{\timestep}{\ensuremath{\delta t}} % numerical timestep
+%
+% more symbols for radiation and gas pressures
+\newcommand{\Prad}{\ensuremath{P_{\!\!\mathrm{rad}}}}	% radiation pressure
+\newcommand{\Lrad}{\ensuremath{L_{\mathrm{rad}}}}	% radiative luminosity
+\newcommand{\tderiv}[3]{\ensuremath{\left(\frac{\partial #1}{\partial #2}\right)_{#3}}} %thermodynamic derivative
+\newcommand{\Lrho}{\ensuremath{L_{\mathrm{inv}}}}	% luminosity at which a density inversion occurs
+\newcommand{\Lonset}{\ensuremath{L_{\mathrm{onset}}}}	% luminosity at which the onset of convection occurs
+\newcommand{\Fconv}{\ensuremath{F_{\!\mathrm{conv}}}}		% convective flux
+\newcommand{\Frad}{\ensuremath{F_{\!\mathrm{rad}}}}	% radiative flux
+\newcommand{\supernab}{\ensuremath{\delta_\nabla}}  % superadiabaticity, $\nablaT-\nablaad$
+\newcommand{\superthresh}{\ensuremath{\delta_{\nabla,\mathrm{thresh}}}}  % controls when MLT++ is applied
+\newcommand{\fsuper}{\ensuremath{f_\nabla}} % reduction factor for $\supernab$
+\newcommand{\asuper}{\ensuremath{\alpha_\nabla}}  % smoothing parameter for MLT++
+\newcommand{\asupert}{\ensuremath{\widetilde{\asuper}}} % MLT++ parameter used in construction of \asuper
+\newcommand{\lambdamax}{\ensuremath{\lambda_{\max}}} % $ \max(\Lrad/\Ledd)$
+\newcommand{\betamin}{\ensuremath{\beta_{\min}}} % $ \min(P/\Pgas)$
+
+% mixing symbols
+\newcommand{\alphasc}{\ensuremath{\alpha_{\mathrm{sc}}}} % semiconvection efficiency parameter
+\newcommand{\alphath}{\ensuremath{\alpha_{\mathrm{th}}}} % thermohaline efficiency parameter
+\newcommand{\Dth}{\ensuremath{D_{\mathrm{th}}}} % thermohaline diffusion coefficient
+
+\newcommand{\EFc}{\ensuremath{E_{\mathrm{F,c}}}}  % Fermi energy at center
+%
+% physical constants
+\newcommand{\kB}{\ensuremath{k_\mathrm{B}}} % Boltzmann constant
+\newcommand{\NA}{\ensuremath{N_\mathrm{\!A}}} % Avogadro number
+\newcommand{\mb}{\ensuremath{m_\mathrm{u}}} % atomic mass unit
+\newcommand{\sigmaSB}{\ensuremath{\sigma_\mathrm{\!SB}}} % Stefan-Boltzmann constant
+
+% rotation
+\newcommand{\veq}{\ensuremath{\varv_{\mathrm{eq}}}} % equatorial velocity
+\newcommand{\veqi}{\ensuremath{\varv_{\mathrm{eq,ini}}}}
+\newcommand{\Om}{\ensuremath{\Omega}}  % surface angular velocity
+\newcommand{\Omc}{\ensuremath{\Om_{\mathrm{crit}}}} % surface critical angular velocity
+\newcommand{\om}{\ensuremath{\omega}}  %  angular velocity
+\newcommand{\tkh}{\ensuremath{\tau_{\mathrm{KH}}}} % thermal (Kelvin-Helmholtz) timescale
+\newcommand{\LP}{{L_{\mathrm{P}}}} 
+\newcommand{\VP}{{V_{\mathrm{P}}}}
+\newcommand{\SP}{{S_{\!\mathrm{P}}}} 
+\newcommand{\rP}{{r_{\mathrm{P}}}}
+\newcommand{\mP}{{m_{\mathrm{P}}}} 
+\newcommand{\fP}{{f_{\mathrm{P}}}}
+\newcommand{\fT}{{f_{\mathrm{T}}}}
+
+% asteroseismology
+\newcommand{\numax}{\ensuremath{\nu_{\mathrm{max}}}} % frequency of maximum power
+\newcommand{\dnu}{\ensuremath{\Delta\nu}}  % large frequency separation of pulsation modes
+\newcommand{\fov}{\ensuremath{f_{\mathrm{ov}}}} % convective overshoot parameter
+\newcommand{\cs}{\ensuremath{c_{\rm s}}} % adiabatic sound speed
+\newcommand{\Slamb}{\ensuremath{S_{\!\ell}}} % Lamb frequency

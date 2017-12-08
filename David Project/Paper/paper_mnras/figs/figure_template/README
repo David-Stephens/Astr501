@@ -1,0 +1,19 @@
+Please use PDF and/or PNG only.
+
+run example notebook in a jupyter session:
+```
+$ jupyter notebook
+```
+
+We place in this location not only the figure itself but also the
+ipython notebook of plotting script and other information were used to
+make the figure. If the data is relevant enough to be shown in a paper
+it should be uploaded and stored on the CADC server. Then, the
+plotting script should plot directly from the CADC server, which
+ensures that other NuGrid members can reproduce the plots. The python
+script that makes the plot should also contain the figure caption as a
+comment at the beginning.  There is an example_figure.ipnb in this
+directory to demonstrate this. Each figure can have its own directory
+in the figs directory. The python file should also contain
+instructions how exactly the python script should be used in order to
+produce the plot.

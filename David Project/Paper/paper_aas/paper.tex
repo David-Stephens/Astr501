@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% basic NuGrid paper template
+%       based on MESA paper template by Ed Brown
+%       version 0.1; 12/10/2016 adopted to aastex 6.1 (FH)
+%       version 0; 04/19/2013
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[11pt,preprint]{aastex6}
+
+%\documentclass[manuscript]{aastex61}
+\documentclass[twocolumn]{aastex61}
+%% see
+%% http://journals.aas.org/authors/aastex/aasguide61.html#style_options
+%% for a full list of style option
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+%% Note: we would like to use the color names provided with the option
+%% [usenames,dvipsnames] to the xolor package. However, aastex61 loads
+%% this package already without options. You can not load it twice, so
+%% we add the option to the aastex61.cls in this paper_template dir.
+
+
+%%%%%%%%%%%%% tracking changes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% the official AAS way
+%%
+%\documentclass[trackchanges]{aastex61}
+%%%% useage %%%%
+%\added{text} (Added: text) text
+%\deleted{text} (Deleted: text) Nothing is printed
+%\replaced{old text}{new text} (Replaced: old text with new text) new text
+%\explain{explanatory text} [Explanation of change: explanatory text] Nothing is printed
+%%
+%% NuGrid/MESA way
+%%
+% see https://en.wikibooks.org/wiki/LaTeX/Colors for selection of
+% colors, such as Apricot Aquamarine BlueGreen BurntOrange
+% CornflowerBlue Emerald Gray Lavender Maroon NavyBlue Orchid Plum Red
+% RoyalBlue SeaGreen Tan Violet YellowOrange
+
+% for comments
+\newcommand{\shortcomment}[3]{\textcolor{#1}{[#2: #3]}}
+% for the Ready-To-Read sign off
+\newcommand{\rtr}[1]{\shortcomment{red}{RTR}{#1}}
+% for freezing a section
+\newcommand{\sectionisfrozen}[1]{\textcolor{BlueViolet}{\textsf{\bfseries[section is frozen: send comments to #1]}}}
+\newcommand{\sectionisdone}{\textcolor{Green}{\textsf{\bfseries[section is done]}}}
+
+% if you want to embed comments in the text, clone the following with
+% a color and your initials...
+
+% for author's comments; choose your own color and replace 'fh' and
+% 'FH' with your name and initials
+\newcommand{\fhcom}[1]{\shortcomment{PineGreen}{FH}{#1}}
+
+\usepackage{txfonts}
+\usepackage{xspace}
+
+% macros. please check here before defining something new.
+\input{../paper_resources/macros/code}
+\input{../paper_resources/macros/derivatives}
+\input{../paper_resources/macros/nuclides}
+\input{../paper_resources/macros/concepts}
+\input{../paper_resources/macros/units}
+\input{../paper_resources/macros/vectors}
+\input{../paper_resources/macros/formatting}
+\input{../paper_resources/macros/symbols}
+
+% misc. abbreviations
+\newcommand{\paperone}{Paper~I} % the first paper
+
+% lengths for figure widths
+\newlength{\apjcolwidth}
+\setlength{\apjcolwidth}{3.38in}
+\newlength{\figwidth}
+\setlength{\figwidth}{0.7\textwidth}
+% to see how figures look, set \figwidth to \apjcolsize
+\setlength{\figwidth}{\apjcolwidth}
+
+% for wide figures
+\newlength{\doublewide}
+\setlength{\doublewide}{0.8\textwidth}
+
+%\documentclass{emulateapj}
+\begin{document}
+\title{NuGrid X. }
+\author{First M. Last}
+\altaffiliation{NuGrid collaboration}
+\affiliation{University of XYZ}
+
+\author{Second  M. Last}
+\affiliation{University of HBF}
+
+\author{Third M. Last}
+\altaffiliation{NuGrid collaboration}
+\affiliation{University of ABC}
+
+%\collaboration{NuGrid collaboration}
+\correspondingauthor{Ralph Somename}
+\email{nugrid@lists.uvic.ca}
+
+\received{receipt date}
+\revised{revision date}
+\accepted{acceptance date}
+\published{published date}
+\submitjournal{AASJournal name}
+
+%\watermark{Draft}
+%\setwatermarkfontsize{1in}
+
+\begin{abstract}
+  Here is the abstract
+\end{abstract}
+
+\keywords{}
+
+\section{First Science Section}\label{s.science1} 
+
+
+An example figure can be seen in \Figs{fig:general}.
+\begin{figure}[ht!]
+%\figurenum{1}
+  \plotone{figs/figure_template/mass-N14.pdf}
+\caption{\label{fig:general}
+This is an example pdf plot.}
+\end{figure}
+
+This plot is discussed in \citet{lau:12}.
+
+Another example figure can be seen in \Figs{two-plotexample}.
+\begin{figure*}[ht!]
+  %\figurenum{1}
+\plottwo{figs/figure_template/mass-O16.png}{figs/figure_template/mass-O16.png}
+\caption{This is an example of two png plots side by side.
+  \label{fig:two-plotexample}}
+\end{figure*}
+
+Ten stars do no make a cluster \citep{2001A&A...369..574V}.
+\fhcom{@MP: not sure this is true!}
+
+%\tableofcontents
+
+%% \include{introduction}
+%% \include{science1}
+%% \include{science2}
+%% \include{conclusions}
+%% \input{acknowledge}
+
+\bibliographystyle{aasjournal}
+\bibliography{../paper_resources/bib/nugrid}
+
+%% % for appendices, if you have them
+%% \appendix
+%% \include{appendixA}
+%% \include{appendixB}
+
+\end{document}
