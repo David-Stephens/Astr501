@@ -17,16 +17,16 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
-\bibitem[\protect\citeauthoryear{{Cyburt} et~al.,}{{Cyburt}
-  et~al.}{2010}]{cyburt:10}
-{Cyburt} R.~H.,  et~al., 2010, \mn@doi [\apjs] {10.1088/0067-0049/189/1/240},
-  \href {http://cdsads.u-strasbg.fr/abs/2010ApJS..189..240C} {189, 240}
+\bibitem[\protect\citeauthoryear{{Battino} et~al.,}{{Battino}
+  et~al.}{2016}]{zr}
+{Battino} U.,  et~al., 2016, \mn@doi [\apj] {10.3847/0004-637X/827/1/30}, \href
+  {http://adsabs.harvard.edu/abs/2016ApJ...827...30B} {827, 30}
 
-\bibitem[\protect\citeauthoryear{{Rogers}, {Swenson}  \& {Iglesias}}{{Rogers}
-  et~al.}{1996}]{1996ApJ...456..902R}
-{Rogers} F.~J.,  {Swenson} F.~J.,   {Iglesias} C.~A.,  1996, \mn@doi
-  [Astrophysical Journal] {10.1086/176705}, \href
-  {http://adsabs.harvard.edu/abs/1996ApJ...456..902R} {456, 902}
+\bibitem[\protect\citeauthoryear{{Paxton}, {Bildsten}, {Dotter}, {Herwig},
+  {Lesaffre}  \& {Timmes}}{{Paxton} et~al.}{2011}]{mesa}
+{Paxton} B.,  {Bildsten} L.,  {Dotter} A.,  {Herwig} F.,  {Lesaffre} P.,
+  {Timmes} F.,  2011, \mn@doi [\apjs] {10.1088/0067-0049/192/1/3}, \href
+  {http://adsabs.harvard.edu/abs/2011ApJS..192....3P} {192, 3}
 
 \makeatother
 \end{thebibliography}
