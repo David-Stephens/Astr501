@@ -36,6 +36,8 @@
 % Don't change these lines unless you know what you are doing
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
+\usepackage{subcaption}
+\usepackage{graphicx}
 
 
 %%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
@@ -60,7 +62,7 @@
 
 % Please keep new commands to a minimum, and use \newcommand not \def to avoid
 % overwriting existing commands. Example:
-%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
+\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,28 +95,19 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ template -- title goes here}
+\title[Short title, max. 45 characters]{Ok Then, here it is}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
-\author[K. T. Smith et al.]{
-Keith T. Smith,$^{1}$\thanks{E-mail: mn@ras.org.uk (KTS)}
-A. N. Other,$^{2,\dagger}$
-Third Author$^{2,3}$
-and Fourth Author$^{3}$
-\\
-% List of institutions
-$^{1}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
-$^{2}$Department, Institution, Street Address, City Postal Code, Country\\
-$^{3}$Another Department, Different Institution, Street Address, City Postal Code, Country\\
-$^\dagger$NuGrid collaboration}
+\author[D. Stephens]{
+David Stephens}
 
 
 % These dates will be filled out by the publisher
-\date{Accepted XXX. Received YYY; in original form ZZZ}
+%\date{Accepted XXX. Received YYY; in original form ZZZ}
 
 % Enter the current year, for the copyright statements etc.
-\pubyear{2015}
+%\pubyear{2015}
 
 % Don't change these lines
 \begin{document}
@@ -124,6 +117,9 @@ $^\dagger$NuGrid collaboration}
 
 % Abstract of the paper
 \begin{abstract}
+During the asymptotic giant branch (AGB) phase of stellar evolution for a 2\Msun~star, the periodic thermal pulses have temperatures as high as 2.9\ee{8} \K. The \neon[22]($\alpha,n$)\magnesium[25]
+After the formation of the \carbon[13] pocket 
+
 This is a simple template for authors to write new MNRAS papers.
 The abstract should briefly describe the aims, methods, and main results of the paper.
 It should be a single paragraph not more than 250 words (200 words for Letters).
@@ -133,7 +129,7 @@ No references should appear in the abstract.
 % Select between one and six entries from the list of approved keywords.
 % Don't make up new ones.
 \begin{keywords}
-keyword1 -- keyword2 -- keyword3
+AGB -- Diffusion Coefficient -- Pre-solar Grains
 \end{keywords}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,6 +137,23 @@ keyword1 -- keyword2 -- keyword3
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+
+
+* Why problem is interesting*
+
+- Zr ratios in pre solar grains from AGB stars show isotopic signatures of material that left the star. 
+- This is from envelope and Zr is produced in 13C pocket, then readjusted in the thermal pulse
+- Tracer of conditions that were in the star at that time
+
+* what have other people done *
+
+- battino tried varying f and how diffusion happens for effects (couldnt get ratios seen)
+- barzyk for xe128 ratio 
+
+* My probelm, the gap! *
+
+- Try a different functionality of diffusion coefficient, hydro leads to this form
+- It contains lower diffusion at base of convection zone, less 22Ne reaction, less Zr96
 
 This is a simple template for authors to write new MNRAS papers.
 See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
@@ -150,14 +163,40 @@ All papers should start with an Introduction section, which sets the work
 in context, cites relevant earlier studies in the field by \citet{1996ApJ...456..902R},
 and describes the problem the authors aim to solve \citep[e.g.][]{cyburt:10}.
 
-\section{Methods, Observations, Simulations etc.}
+\section{Methods and Models}
 
 Normally the next section describes the techniques the authors used.
 It is frequently split into subsections, such as Section~\ref{sec:maths} below.
 
-\subsection{Maths}
-\label{sec:maths} % used for referring to this section from elsewhere
+\subsection{\MESA Models}
+\label{sec:mesa_models} % used for referring to this section from elsewhere
 
+Only a 2\Msun, $Z=0.02$, stellar evolution model was usedd. This was computed using the \MESA~\citep{mesa} stellar code and taken from the \nugrid NuGrid set1ext, set1.2 models \citep{models}. These models were evolved from the pre-main sequence to a white dwarf. For this work, a singular thermal pulse, the 13th?, was analyzed and a Kippenhahn diagram of this particular thermal pulse can be seen in \Figure{kipp}. 
+
+For these models, the mixing lengths theory \citep{cox}, MLT, is used for the convection zones with a mixing length, $\alphaMLT=1.73$. Overshoot is implemented in \MESA with the formula from \citet{overshoot} and \citet{freytag}:
+
+\begin{equation}
+D = D_{0} exp^{-2z/f H_{p0}}
+\label{eq:overshoot}
+\end{equation} 
+
+Where D$_{0}$ and H$_{p0}$ are taken at the convective boundary. 
+
+
+\subsection{\zirconium[95] and \iodine[128] Branching}
+\label{sec:branching}
+
+
+\subsection{Diffusion Coefficient Modifications}
+\label{sec:diffusion}
+
+\subsection{\mppnp~Post Processing}
+\label{sec:mppnp}
+
+\subsection{Neutron Density and Temperature}
+\label{sec:neutron}
+
+\section{Results}
 Simple mathematics can be inserted into the flow of the text e.g. $2\times3=6$
 or $v=220$\,km\,s$^{-1}$, but more complicated expressions should be entered
 as a numbered equation:
@@ -169,30 +208,82 @@ as a numbered equation:
 
 Refer back to them as e.g. equation~(\ref{eq:quadratic}).
 
-\subsection{Figures and tables}
-
-Figures and tables should be placed at logical positions in the text. Don't
-worry about the exact layout, which will be handled by the publishers.
-
-An example figure can be seen in \Fig{mass-N14}.
-, and tables as
-e.g. \Tab{example_table}.
-
-% Example figure
+% Kippenhahn figure
 \begin{figure}
-  % To include a figure from a file named example.*
-  % Allowable file formats are eps or ps if compiling using latex
-  % or pdf, png, jpg if compiling using pdflatex
+  \includegraphics[width=\columnwidth]{figs/2M_Kippenhahn.png}
+  \caption{Within the He intershell region, the \carbon[13] pocket forms and isotopic ratios are set by the \spr~(\Fig{zr_ratio13C}). It is then mixed and diluted in the He-flash pulse driven convection zone where temperatures get high enough to activate \neon[22]($\alpha,n$)\magnesium[25]. This shifts the isotopic ratios to those shown in \Figure{zr_ratioDil}} 
+  \lFig{kipp}
+\end{figure}
 
-  %\includegraphics[width=\columnwidth]{figs/figure_template/mass-N14}
-  \caption{This is an example figure. Captions appear below each
-    figure.  Give enough detail for the reader to understand what
-    they're looking at, but leave detailed discussion to the main body
-    of the text.  This particular figure file will appear when you
-    exectute the example notebook in
-    \texttt{figs/figure\_template}. Then uncomment the
-    \texttt{includegraphics} command in the latex source file.} 
-    \lFig{mass-N14}
+% c13 pocket zr ratio
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/C13_Zr.png}
+  \caption{Within the \carbon[13] pocket there is a significant amount of \zirconium[94] produced but almost no \zirconium[96]. This is due to the low neutron densities not opening the \zirconium[95] branch.} 
+  \lFig{zr_ratio13C}
+\end{figure}
+
+% Zr ratio after pulse
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/Pulse_Zr.png}
+  \caption{After the \carbon[13] pocket is mixed into the He-flash pulse driven convection zone, the temperatures get high enough for the \neon[22]($\alpha,n$)\magnesium[25] reaction. This provides high enough neutron densities to open the \zirconium[95] branch and boost the \zirconium[96].} 
+  \lFig{zr_ratioDil}
+\end{figure}
+
+% Xe plot
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figs/xe.png}
+    \caption{Another figure.}
+    \lFig{mass-O16}
+\end{figure}
+
+% Zr 95 branch
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figs/Zr95_branch.png}
+    \caption{Another figure.}
+    \lFig{zr95}
+\end{figure}
+
+% Zr 94 plot
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/Zr94.png}
+  \caption{This is the Zr94 mil plot \citet{zr}.} 
+  \lFig{zr94}
+\end{figure}
+
+% diffusion plot
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/Diffusion_compare.png}
+  \caption{This is a comparison between the diffusion coefficients} 
+  \lFig{diffusion}
+\end{figure}
+
+% time scale plot
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/Time_scale.png}
+  \caption{This is the time scale plot} 
+  \lFig{time_scale}
+\end{figure}
+
+% neutron denisty time plot
+\begin{figure}
+  \includegraphics[width=\columnwidth]{figs/Neutron_Density_Time.png}
+  \caption{This is the neutron density as a function of time} 
+  \lFig{density}
+\end{figure}
+
+% sub time step neutron plots
+\begin{figure}
+\centering
+\begin{subfigure}[b]{1\columnwidth}
+   \includegraphics[width=1\columnwidth]{figs/T_Neutron_sub.png}
+   \lFig{neutron_sub}
+\end{subfigure}
+
+\begin{subfigure}[b]{1\columnwidth}
+   \includegraphics[width=1\columnwidth]{figs/T_Neutron_Sub_Closeup}
+   \lFig{neutron_sub_close}
+\end{subfigure}
+\caption{Testing}
 \end{figure}
 
 Another results is also good \Fig{mass-O16}.
@@ -213,16 +304,6 @@ Another results is also good \Fig{mass-O16}.
 	\end{tabular}
 \end{table}
 
-% Example figure
-\begin{figure}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[width=\columnwidth]{figs/figure_template/mass-O16}
-    \caption{Another figure.}
-    \lFig{mass-O16}
-\end{figure}
-
 \section{Conclusions}
 
 The last numbered section should briefly summarise what has been done, and describe
@@ -241,7 +322,7 @@ Try to keep it short.
 % The best way to enter references is to use BibTeX:
 
 \bibliographystyle{mnras}
-\bibliography{../paper_resources/bib/nugrid} % if your bibtex file is
+\bibliography{paper.bib} % if your bibtex file is
                                              % called example.bib
 
 
