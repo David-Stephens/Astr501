@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.31)  11 DEC 2017 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.31)  11 DEC 2017 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,27 +458,27 @@ LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <8> not available
 
 
 ]
-<figs/Zr94.png, id=102, 454.69875pt x 314.17375pt>
+<figs/Zr94.png, id=101, 454.69875pt x 314.17375pt>
 File: figs/Zr94.png Graphic file (type png)
  <use figs/Zr94.png>
 Package pdftex.def Info: figs/Zr94.png used on input line 160.
 (pdftex.def)             Requested size: 240.0pt x 165.83055pt.
 
-<figs/2M_Kippenhahn.png, id=112, 419.166pt x 313.6518pt>
+<figs/2M_Kippenhahn.png, id=111, 419.166pt x 313.6518pt>
 File: figs/2M_Kippenhahn.png Graphic file (type png)
 
 <use figs/2M_Kippenhahn.png>
 Package pdftex.def Info: figs/2M_Kippenhahn.png used on input line 167.
 (pdftex.def)             Requested size: 240.0pt x 179.5874pt.
 
-<figs/Neutron_Density_Time.png, id=122, 419.166pt x 313.6518pt>
+<figs/Neutron_Density_Time.png, id=121, 419.166pt x 313.6518pt>
 File: figs/Neutron_Density_Time.png Graphic file (type png)
 
 <use figs/Neutron_Density_Time.png>
 Package pdftex.def Info: figs/Neutron_Density_Time.png used on input line 181.
 (pdftex.def)             Requested size: 240.0pt x 179.5874pt.
 
-<figs/T_Neutron_sub.png, id=123, 462.528pt x 346.896pt>
+<figs/T_Neutron_sub.png, id=122, 462.528pt x 346.896pt>
 File: figs/T_Neutron_sub.png Graphic file (type png)
 
 <use figs/T_Neutron_sub.png>
@@ -489,21 +489,21 @@ Package pdftex.def Info: figs/T_Neutron_sub.png used on input line 188.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.199 \end{equation}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.2}) has been already used, duplicate ignored
+l.197 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.199 \end{equation}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3}) has been already used, duplicate ignored
+l.197 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.199 \end{equation}
-                     <./figs/Zr94.png> <./figs/2M_Kippenhahn.png> <./figs/Neutr
-on_Density_Time.png>]
+l.197 \begin{equation}
+                       <./figs/Zr94.png> <./figs/2M_Kippenhahn.png> <./figs/Neu
+tron_Density_Time.png>]
 <figs/Diffusion_compare.png, id=160, 462.528pt x 346.896pt>
 File: figs/Diffusion_compare.png Graphic file (type png)
 
@@ -601,7 +601,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\zirconium' on input line 307.
 
-<figs/JonesS1_zr.png, id=235, 462.528pt x 346.896pt>
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.311 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.311 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.311 
+       <./figs/Pulse_Zr.png> <./figs/xe.png> <./figs/Time_scale.png>]
+<figs/JonesS1_zr.png, id=246, 462.528pt x 346.896pt>
 File: figs/JonesS1_zr.png Graphic file (type png)
  <use figs/JonesS1_zr.png>
 Package pdftex.def Info: figs/JonesS1_zr.png used on input line 314.
@@ -615,53 +634,37 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\xenon' on input line 319.
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.322 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.322 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.322 
-       <./figs/Pulse_Zr.png> <./figs/xe.png> <./figs/Time_scale.png>]
-<figs/JonesS1_xe2.png, id=250, 462.528pt x 346.896pt>
+<figs/JonesS1_xe2.png, id=249, 462.528pt x 346.896pt>
 File: figs/JonesS1_xe2.png Graphic file (type png)
 
 <use figs/JonesS1_xe2.png>
 Package pdftex.def Info: figs/JonesS1_xe2.png used on input line 325.
 (pdftex.def)             Requested size: 240.0pt x 180.00055pt.
- (./paper.bbl
+ (./paper.bbl [6pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.58 ...traniero}}{{Reifarth} et~al.}{2004}]{reif}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.12}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.58 ...traniero}}{{Reifarth} et~al.}{2004}]{reif}
+                                                   <./figs/JonesS1_zr.png> <./f
+igs/JonesS1_xe2.png>]
 
 Package hyperref Warning: Suppressing empty link on input line 67.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
+ [7
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.367 \end{document}
-                     <./figs/JonesS1_zr.png> <./figs/JonesS1_xe2.png>]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
-
-(./paper.aux)
+ (./paper.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 367.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
 Package rerunfilecheck Info: File `paper.out' has not changed.
@@ -673,13 +676,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
  ) 
 Here is how much of TeX's memory you used:
- 8183 strings out of 493029
- 109762 string characters out of 6136233
+ 8184 strings out of 493029
+ 109768 string characters out of 6136233
  221992 words of memory out of 5000000
  11475 multiletter control sequences out of 15000+600000
  55534 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,34p,1571b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,34p,1681b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
@@ -705,10 +708,10 @@ sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper.pdf (6 pages, 1223605 bytes).
+Output written on paper.pdf (7 pages, 1407824 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 311 compressed objects within 4 object streams
+ 48 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
