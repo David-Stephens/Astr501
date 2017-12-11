@@ -17,16 +17,55 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Barzyk}, {Savina}, {Davis}, {Gallino},
+  {Pellin}, {Lewis}, {Amari}  \& {Clayton}}{{Barzyk} et~al.}{2006}]{grain}
+{Barzyk} J.~G.,  {Savina} M.~R.,  {Davis} A.~M.,  {Gallino} R.,  {Pellin}
+  M.~J.,  {Lewis} R.~S.,  {Amari} S.,   {Clayton} R.~N.,  2006, \mn@doi [\nar]
+  {10.1016/j.newar.2006.06.055}, \href
+  {http://adsabs.harvard.edu/abs/2006NewAR..50..587B} {50, 587}
+
 \bibitem[\protect\citeauthoryear{{Battino} et~al.,}{{Battino}
   et~al.}{2016}]{zr}
 {Battino} U.,  et~al., 2016, \mn@doi [\apj] {10.3847/0004-637X/827/1/30}, \href
   {http://adsabs.harvard.edu/abs/2016ApJ...827...30B} {827, 30}
+
+\bibitem[\protect\citeauthoryear{{Cox} \& {Giuli}}{{Cox} \&
+  {Giuli}}{1968}]{cox}
+{Cox} J.~P.,  {Giuli} R.~T.,  1968, {Principles of stellar structure }
+
+\bibitem[\protect\citeauthoryear{{Freytag}, {Ludwig}  \& {Steffen}}{{Freytag}
+  et~al.}{1996}]{freytag}
+{Freytag} B.,  {Ludwig} H.-G.,   {Steffen} M.,  1996, \aap, \href
+  {http://adsabs.harvard.edu/abs/1996A%26A...313..497F} {313, 497}
+
+\bibitem[\protect\citeauthoryear{{Herwig}}{{Herwig}}{2000}]{overshoot}
+{Herwig} F.,  2000, \aap, \href
+  {http://adsabs.harvard.edu/abs/2000A%26A...360..952H} {360, 952}
+
+\bibitem[\protect\citeauthoryear{{Jones}, {Andrassy}, {Sandalski}, {Davis},
+  {Woodward}  \& {Herwig}}{{Jones} et~al.}{2017}]{4pi}
+{Jones} S.,  {Andrassy} R.,  {Sandalski} S.,  {Davis} A.,  {Woodward} P.,
+  {Herwig} F.,  2017, \mn@doi [\mnras] {10.1093/mnras/stw2783}, \href
+  {http://adsabs.harvard.edu/abs/2017MNRAS.465.2991J} {465, 2991}
 
 \bibitem[\protect\citeauthoryear{{Paxton}, {Bildsten}, {Dotter}, {Herwig},
   {Lesaffre}  \& {Timmes}}{{Paxton} et~al.}{2011}]{mesa}
 {Paxton} B.,  {Bildsten} L.,  {Dotter} A.,  {Herwig} F.,  {Lesaffre} P.,
   {Timmes} F.,  2011, \mn@doi [\apjs] {10.1088/0067-0049/192/1/3}, \href
   {http://adsabs.harvard.edu/abs/2011ApJS..192....3P} {192, 3}
+
+\bibitem[\protect\citeauthoryear{{Reifarth}, {K{\"a}ppeler}, {Voss}, {Wisshak},
+  {Gallino}, {Pignatari}  \& {Straniero}}{{Reifarth} et~al.}{2004}]{reif}
+{Reifarth} R.,  {K{\"a}ppeler} F.,  {Voss} F.,  {Wisshak} K.,  {Gallino} R.,
+  {Pignatari} M.,   {Straniero} O.,  2004, \mn@doi [\apj] {10.1086/422206},
+  \href {http://adsabs.harvard.edu/abs/2004ApJ...614..363R} {614, 363}
+
+\bibitem[\protect\citeauthoryear{{Ritter}, {Herwig}, {Jones}, {Pignatari},
+  {Fryer}  \& {Hirschi}}{{Ritter} et~al.}{2017}]{models}
+{Ritter} C.,  {Herwig} F.,  {Jones} S.,  {Pignatari} M.,  {Fryer} C.,
+  {Hirschi} R.,  2017, preprint, \href
+  {http://adsabs.harvard.edu/abs/2017arXiv170908677R} {} (\mn@eprint {arXiv}
+  {1709.08677})
 
 \makeatother
 \end{thebibliography}

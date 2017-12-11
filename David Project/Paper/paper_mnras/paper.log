@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.31)  9 DEC 2017 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.31)  10 DEC 2017 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -352,20 +352,20 @@ LaTeX Info: Redefining \bm on input line 207.
 (../paper_resources/macros/symbols.tex) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -410,7 +410,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 113.
+Package hyperref Info: Link coloring ON on input line 115.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -420,9 +420,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write3
@@ -447,7 +447,7 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \begin{document}
+l.115 \begin{document}
                       
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
@@ -484,43 +484,44 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1521) in paragraph at lines 119--122
+Underfull \hbox (badness 1521) in paragraph at lines 121--124
 \T1/aer/m/n/10 Dur-ing the asymp-totic gi-ant branch (AGB) phase of stel-lar ev
 o-lu-tion for a
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 159.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 166.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 
 Package natbib Warning: Citation `1996ApJ...456..902R' on page 1 undefined on i
-nput line 163.
+nput line 170.
 
 
 Package natbib Warning: Citation `cyburt:10' on page 1 undefined on input line 
-164.
-
-
-LaTeX Warning: Reference `sec:maths' on page 1 undefined on input line 169.
+171.
 
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 171.
+(Font)              using `T1/aett/m/n' instead on input line 176.
 
 ! Undefined control sequence.
-l.174 ...} stellar code and taken from the \nugrid
+l.179 ...} stellar code and taken from the \nugrid
                                                    NuGrid set1ext, set1.2 mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -529,217 +530,219 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package natbib Warning: Citation `models' on page 1 undefined on input line 174
-.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 180.
 
-Package natbib Warning: Citation `cox' on page 1 undefined on input line 176.
-
-
-Package natbib Warning: Citation `overshoot' on page 1 undefined on input line 
-176.
-
-
-Package natbib Warning: Citation `freytag' on page 1 undefined on input line 17
-6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\zirconium' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\iodine' on input line 186.
-
-<figs/2M_Kippenhahn.png, id=48, 419.166pt x 313.6518pt>
-File: figs/2M_Kippenhahn.png Graphic file (type png)
-
-<use figs/2M_Kippenhahn.png>
-Package pdftex.def Info: figs/2M_Kippenhahn.png used on input line 213.
-(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
-
-
-LaTeX Warning: File `figs/C13_Zr.png' not found on input line 220.
-
-
-! Package pdftex.def Error: File `figs/C13_Zr.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 ...hics[width=\columnwidth]{figs/C13_Zr.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `figs/Pulse_Zr.png' not found on input line 227.
-
-
-! Package pdftex.def Error: File `figs/Pulse_Zr.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227 ...cs[width=\columnwidth]{figs/Pulse_Zr.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<figs/xe.png, id=54, 432.61626pt x 314.17375pt>
-File: figs/xe.png Graphic file (type png)
- <use figs/xe.png>
-Package pdftex.def Info: figs/xe.png used on input line 234.
-(pdftex.def)             Requested size: 240.0pt x 174.29178pt.
-
-<figs/Zr95_branch.png, id=55, 597.23125pt x 347.2975pt>
-File: figs/Zr95_branch.png Graphic file (type png)
-
-<use figs/Zr95_branch.png>
-Package pdftex.def Info: figs/Zr95_branch.png used on input line 241.
-(pdftex.def)             Requested size: 240.0pt x 139.56305pt.
- <figs/Zr94.png, id=56, 454.69875pt x 314.17375pt>
-File: figs/Zr94.png Graphic file (type png)
-
-<use figs/Zr94.png>
-Package pdftex.def Info: figs/Zr94.png used on input line 248.
-(pdftex.def)             Requested size: 240.0pt x 165.83055pt.
- <figs/Diffusion_compare.png, id=59, 462.528pt x 346.896pt>
-File: figs/Diffusion_compare.png Graphic file (type png)
-
-<use figs/Diffusion_compare.png>
-Package pdftex.def Info: figs/Diffusion_compare.png used on input line 255.
-(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
-
-<figs/Time_scale.png, id=60, 419.166pt x 313.6518pt>
-File: figs/Time_scale.png Graphic file (type png)
- <use figs/Time_scale.png>
-Package pdftex.def Info: figs/Time_scale.png used on input line 262.
-(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
-
-<figs/Neutron_Density_Time.png, id=61, 419.166pt x 313.6518pt>
-File: figs/Neutron_Density_Time.png Graphic file (type png)
-
-<use figs/Neutron_Density_Time.png>
-Package pdftex.def Info: figs/Neutron_Density_Time.png used on input line 269.
-(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
-
-<figs/T_Neutron_sub.png, id=62, 462.528pt x 346.896pt>
-File: figs/T_Neutron_sub.png Graphic file (type png)
-
-<use figs/T_Neutron_sub.png>
-Package pdftex.def Info: figs/T_Neutron_sub.png used on input line 278.
-(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
-
-<figs/T_Neutron_Sub_Closeup.png, id=63, 642.4pt x 481.8pt>
-File: figs/T_Neutron_Sub_Closeup.png Graphic file (type png)
-
-<use figs/T_Neutron_Sub_Closeup.png>
-Package pdftex.def Info: figs/T_Neutron_Sub_Closeup.png used on input line 283.
-
-(pdftex.def)             Requested size: 240.0pt x 179.9982pt.
- (./paper.bbl
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
-) has been already used, duplicate ignored
+Package caption Warning: \label without proper reference on input line 333.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:neutron_sub' on page 2 undefined on input line 19
+3.
+
+
+Package caption Warning: \label without proper reference on input line 333.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:neutron_sub' on page 2 undefined on input line 23
+2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\zirconium' on input line 234.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\iodine' on input line 234.
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 239--240
+[]\T1/aer/m/n/9 During the He-flash PDCZ tem-per-a-tures get high
+ []
+
+[2]
+! Undefined control sequence.
+l.249 ... to a significant portion of the \iondine
+                                                  [128] to undergo \iodine[1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delta' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\zirconium' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\zirconium' on input line 256.
+
+<figs/2M_Kippenhahn.png, id=163, 419.166pt x 313.6518pt>
+File: figs/2M_Kippenhahn.png Graphic file (type png)
+
+<use figs/2M_Kippenhahn.png>
+Package pdftex.def Info: figs/2M_Kippenhahn.png used on input line 271.
+(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
+ <figs/C13_Zr.png, id=169, 462.528pt x 346.896pt>
+File: figs/C13_Zr.png Graphic file (type png)
+
+<use figs/C13_Zr.png>
+Package pdftex.def Info: figs/C13_Zr.png used on input line 278.
+(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
+ <figs/Pulse_Zr.png, id=170, 462.528pt x 346.896pt>
+File: figs/Pulse_Zr.png Graphic file (type png)
+
+<use figs/Pulse_Zr.png>
+Package pdftex.def Info: figs/Pulse_Zr.png used on input line 285.
+(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
+
+<figs/Zr95_branch.png, id=171, 597.23125pt x 347.2975pt>
+File: figs/Zr95_branch.png Graphic file (type png)
+
+<use figs/Zr95_branch.png>
+Package pdftex.def Info: figs/Zr95_branch.png used on input line 292.
+(pdftex.def)             Requested size: 240.0pt x 139.56305pt.
+ <figs/xe.png, id=172, 432.61626pt x 314.17375pt>
+File: figs/xe.png Graphic file (type png)
+
+<use figs/xe.png>
+Package pdftex.def Info: figs/xe.png used on input line 300.
+(pdftex.def)             Requested size: 240.0pt x 174.29178pt.
+ <figs/Zr94.png, id=177, 454.69875pt x 314.17375pt>
+File: figs/Zr94.png Graphic file (type png)
+
+<use figs/Zr94.png>
+Package pdftex.def Info: figs/Zr94.png used on input line 307.
+(pdftex.def)             Requested size: 240.0pt x 165.83055pt.
+
+<figs/Diffusion_compare.png, id=180, 462.528pt x 346.896pt>
+File: figs/Diffusion_compare.png Graphic file (type png)
+
+<use figs/Diffusion_compare.png>
+Package pdftex.def Info: figs/Diffusion_compare.png used on input line 314.
+(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
+
+<figs/Time_scale.png, id=187, 419.166pt x 313.6518pt>
+File: figs/Time_scale.png Graphic file (type png)
+
+<use figs/Time_scale.png>
+Package pdftex.def Info: figs/Time_scale.png used on input line 321.
+(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
+
+<figs/Neutron_Density_Time.png, id=188, 419.166pt x 313.6518pt>
+File: figs/Neutron_Density_Time.png Graphic file (type png)
+
+<use figs/Neutron_Density_Time.png>
+Package pdftex.def Info: figs/Neutron_Density_Time.png used on input line 328.
+(pdftex.def)             Requested size: 240.0pt x 179.5874pt.
+
+<figs/T_Neutron_sub.png, id=189, 462.528pt x 346.896pt>
+File: figs/T_Neutron_sub.png Graphic file (type png)
+
+<use figs/T_Neutron_sub.png>
+Package pdftex.def Info: figs/T_Neutron_sub.png used on input line 335.
+(pdftex.def)             Requested size: 240.0pt x 180.00055pt.
+ (./paper.bbl [3pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.346 \bsp
-          	% typesetting commentpdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.2}) has been already used, duplicate ignored
+l.26 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.346 \bsp
-          	% typesetting commentpdfTeX warning (ext4): destination with the sam
-e identifier (name{table.1}) has been already used, duplicate ignored
+l.26 
+      <./figs/2M_Kippenhahn.png> <./figs/C13_Zr.png>]
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.346 \bsp
-          	% typesetting commentpdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.3}) has been already used, duplicate ignored
+Package hyperref Warning: Suppressing empty link on input line 67.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.346 \bsp
-          	% typesetting commentpdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.346 \bsp
-          	% typesetting comment <./figs/2M_Kippenhahn.png> <./figs/xe.png>]
+)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \end{document}
+l.381 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.381 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.381 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \end{document}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{figure.7}) has been already used, duplicate ignored
+l.381 \end{document}
+                     <./figs/Pulse_Zr.png> <./figs/Zr95_branch.png> <./figs/xe.
+png> <./figs/Zr94.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \end{document}
+l.381 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \end{document}
+l.381 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.348 \end{document}
-                     <./figs/Zr95_branch.png> <./figs/Zr94.png> <./figs/Diffusi
-on_compare.png> <./figs/Time_scale.png> <./figs/Neutron_Density_Time.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.348 \end{document}
-                    
-
- <./figs/T_Neutron_sub.png> <./figs/T_Neutron_Sub_Closeup.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+l.381 \end{document}
+                     <./figs/Diffusion_compare.png> <./figs/Time_scale.png> <./
+figs/Neutron_Density_Time.png> <./figs/T_Neutron_sub.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (./paper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: FACC5587787D7C61E1BB2F87EACC3077;610.
+(rerunfilecheck)             Checksum: 196E735BC3F7FCD96A53ED67015F448B;687.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -747,42 +750,47 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
- 9204 strings out of 493029
- 128551 string characters out of 6136233
- 230771 words of memory out of 5000000
- 12500 multiletter control sequences out of 15000+600000
+ 9231 strings out of 493029
+ 128783 string characters out of 6136233
+ 237400 words of memory out of 5000000
+ 12515 multiletter control sequences out of 15000+600000
  52436 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,40p,612b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,40p,1462b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper.pdf (4 pages, 984170 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper.pdf (5 pages, 1193943 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

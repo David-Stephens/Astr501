@@ -1,10 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Methods and Models}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{MESAModels}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{[95] and [128] Branching}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.1}{MESA Models}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Neutron Density and Temperature}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Diffusion Coefficient Modifications}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{mppnp Post Processing}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Neutron Density and Temperature}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{[95] and [128] Branching}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{mppnp Post Processing}{section.2}% 7
 \BOOKMARK [1][-]{section.3}{Results}{}% 8
-\BOOKMARK [1][-]{section.4}{Conclusions}{}% 9
-\BOOKMARK [1][-]{section.A1}{Some extra material}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Effects on \([96] / [94]\)}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Conclusions}{}% 10
+\BOOKMARK [1][-]{section.A1}{Some extra material}{}% 11

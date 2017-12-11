@@ -19,6 +19,8 @@
 %    Beta testing only - never publicly released
 %    First version: a simple (ish) template for creating an MNRAS paper
 
+% there are 25 thermal pulses, one i am looking at is the 24th
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Basic setup. Most papers should leave these options alone.
 % \documentclass[a4paper,fleqn,usenatbib]{mnras}
@@ -138,6 +140,11 @@ AGB -- Diffusion Coefficient -- Pre-solar Grains
 
 \section{Introduction}
 
+The Zr isotopes are produced from the \spr with \iron[56] as the seed. To start the \spr~the neutron densities must reach above 1\ee{8}  \power{\centi\meter}{-3} and get past the first peak for many of the Zr isotopes. One of the \spr sites in middle mass stars is during the thermal pulses caused by successive He-flashes during their asymptotic giant branch (AGB) phase. In between these thermal pulses the \carbon[13] pocket develops and through the \carbon[13]($\alpha,n$)\oxygen[16] reaction the \spr can occur. Then, this material will be mixed through a He-flash pulse driven convection zone (PDCZ) and the \neon[22]($\alpha,n$)\magnesium[25] reaction will activate the \spr for a short period of time. The neutron densities that are achieved through these two processes differs significantly and depends on the conditions in the star. The Zr isotopic ratios can be used to understand the conditions within the AGB stars as they are sensitive to the neutron densities that they are exposed to \citep{zr}.
+
+The \zirconium[95] isotope is unstable with a lifetime of 64 days. Within the \carbon[13] pocket, the neutron densities do not get large enough to allow for this branch to open so most of the \zirconium[95] will decay to \molybdenum[95] rather than undergo \zirconium[95]($n,\gamma$)\zirconium[96]. This skews the isotopic ratios of \zirconium[96] / \zirconium[94] as there will be production of \zirconium[94] but almost none of \zirconium[96] during the \carbon[13] pocket formation. However, once the He-flash PDCZ forms, the \neon[22]($\alpha,n$)\magnesium[25] reaction can generate neutron densities as large as 1\ee{10} \power{\centi\meter}{-3} which will open the branch for the \zirconium[95]($n,\gamma$)\zirconium[96] to occur shifting the isotopic ratios again. Many of these thermal pulses happen throughout the AGB phase and some of the material left behind from the He-flash PDCZ can be mixed into the H envelope from the third dredge up that happens after. Due to the significant mass loss during the AGB phase, the isotopic ratios of Zr can be measured directly from the pre-solar SiC grains that form from the material lost during the AGB phase \citep{grain}. \citet{zr} compared the H envelope \zirconium[96] / \zirconium[94] ratios produced in 3\Msun~and 2\Msun~stellar models with the ratios measured in SiC grains from \citet{grain}. The stellar model results overestimated the ratio in all models (\Fig{zr94}).
+
+The goal of this work is to test if minor changes, suggested by hydrodynamic simulations, to the diffusion coefficient as a function of mass will affect the Zr isotopic ratios that the He-flash PDCZ produces. The ratios that are computed with the changes to the diffusion coefficient will be compared to those without and their impact on results that \citep{zr} predicts will be discussed. The analysis will be conducted on a 2\Msun, $Z=0.02$ stellar model.
 
 * Why problem is interesting*
 
@@ -163,15 +170,13 @@ All papers should start with an Introduction section, which sets the work
 in context, cites relevant earlier studies in the field by \citet{1996ApJ...456..902R},
 and describes the problem the authors aim to solve \citep[e.g.][]{cyburt:10}.
 
+
 \section{Methods and Models}
 
-Normally the next section describes the techniques the authors used.
-It is frequently split into subsections, such as Section~\ref{sec:maths} below.
-
-\subsection{\MESA Models}
+\subsection{\MESA~Models}
 \label{sec:mesa_models} % used for referring to this section from elsewhere
 
-Only a 2\Msun, $Z=0.02$, stellar evolution model was usedd. This was computed using the \MESA~\citep{mesa} stellar code and taken from the \nugrid NuGrid set1ext, set1.2 models \citep{models}. These models were evolved from the pre-main sequence to a white dwarf. For this work, a singular thermal pulse, the 13th?, was analyzed and a Kippenhahn diagram of this particular thermal pulse can be seen in \Figure{kipp}. 
+Only a 2\Msun, $Z=0.02$, stellar evolution model was used. This was computed using the \MESA~\citep{mesa} stellar code and taken from the \nugrid NuGrid set1ext, set1.2 models \citep{models}. These models were evolved from the pre-main sequence to a white dwarf. For this work, a singular thermal pulse, the 24$^{th}$, was analyzed and a Kippenhahn diagram of this particular thermal pulse can be seen in \Figure{kipp}. 
 
 For these models, the mixing lengths theory \citep{cox}, MLT, is used for the convection zones with a mixing length, $\alphaMLT=1.73$. Overshoot is implemented in \MESA with the formula from \citet{overshoot} and \citet{freytag}:
 
@@ -180,23 +185,77 @@ D = D_{0} exp^{-2z/f H_{p0}}
 \label{eq:overshoot}
 \end{equation} 
 
-Where D$_{0}$ and H$_{p0}$ are taken at the convective boundary. 
-
-
-\subsection{\zirconium[95] and \iodine[128] Branching}
-\label{sec:branching}
-
-
-\subsection{Diffusion Coefficient Modifications}
-\label{sec:diffusion}
-
-\subsection{\mppnp~Post Processing}
-\label{sec:mppnp}
+\noindent Where D$_{0}$ and H$_{p0}$ are taken at the convective boundary (\Sect{diffusion}). The models were also post processed with \mppnp as part of the work done in \citep{models}. The methods used in this work to post process the He-flash PDCZ are outlined in \Sect{mppnp}.
 
 \subsection{Neutron Density and Temperature}
 \label{sec:neutron}
 
+Within the PDCZ, there is a significant amount in mass fraction of \neon[22] that has been produced as well as a high mass fraction of alpha particles. There are a lot of alpha particles from the H-shell burning products as well as the helium burning is not significant at this point (\Fig{kipp}). Once temperatures reach close to T$_{8} \approx 2.8$ the \neon[22]($\alpha,n$)\magnesium[25] reaction is activated. This can be seen from the high neutron densities shown in \FigTwo{density}{neutron_sub}. When looking at a particular model number, the neutron density as a function of mass within the convective boundaries has a significant peak near the lower boundary. This is due to the \neon[22]($\alpha,n$)\magnesium[25] reaction being very sensitive to temperature and a huge portion of the reactions will take place at the bottom of the convection zone. Then, the neutrons will diffuse and mix throughout the convection zone allowing for the \spr to take place again. 
+
+In \Fig{density} the average neutron density steadily rises until the maximum temperature that will occur within the convection zone and then slowly drops. This peak in the average neutron densities is very short lived as it is only sustained for a few years. However, this will have an impact on the isotopic ratios of \zirconium as discussed in \Sect{branching}. The importance of this is that some of the material from the PDCZ will be mixed to the H envelope from the periodic third dredge-up that occurs between thermal pulses (\Fig{kipp}).
+
+\subsection{Diffusion Coefficient Modifications}
+\label{sec:diffusion}
+
+The \MESA models use the MLT and the diffusion equation to estimate how the mass fraction of isotopic species are transported and mixed throughout convection zones. To calculate the change in mass fraction of a particular species at a particular mass coordinate in time, the stellar evolution codes solve the differential equation 
+\begin{equation}
+\frac{d\mathbf{X_{i}}}{dt} = \left. \frac{d\mathbf{X_{i}}}{dt} \right \rvert_{burn} + \left. \frac{d\mathbf{X_{i}}}{dt} \right \rvert_{mix}
+\end{equation}
+
+\noindent which contains the changes due to the possible reactions that the particular species can be involved in and the spatial diffusion of matter due to the mixing in a convection zone. Using the diffusion formalism, this mixing term is given by
+\begin{equation}
+\left. \frac{d\mathbf{X_{i}}}{dt} \right \rvert_{mix} = \frac{\partial}{\partial m} [(4\pi r^{2} \rho)^{2} D(m) \frac{d\mathbf{X_{i}}}{dm}]
+\label{eq:diffusion}
+\end{equation} 
+
+\noindent Where $D(m)$ is the diffusion coefficient at mass coordinate m. 
+
+Using the MLT, the diffusion coefficient is given by
+\begin{equation}
+D = \frac{1}{3} v_{MLT} \alphaMLT H_{p}
+\label{eq:diffusion_mlt}
+\end{equation}
+
+\noindent Where \alphaMLT$H_{p}$ is called the mixing length. If just using the MLT, this diffusion would immediately go to zero at the Schwarzschild boundary (convective boundary). The Schwarzschild boundary is the mass coordinate where the Schwarzschild criterion, the condition in which the gas will be convectively unstable, is located. The Schwarzschild criterion is when the condition
+\begin{equation}
+\nabla_{rad} > \nabla_{ad}
+\end{equation}
+
+\noindent is satisfied. $\nabla_{rad} = \left(\dxdy{lnT}{lnP}\right)_{rad}$ is the gradient that the star would have if all of the energy is transported by radiation while $\nabla_{ad} = \left(\dxdy{lnT}{lnP}\right)_{ad}$ is the gradient from all of the energy being transported by convection. 
+
+The functionality of the MLT diffusion coefficient across the convection zone is similar to what is calculated from 3D hydrodynamic simulations. However, a main qualitative difference is that the diffusion coefficient begins to drop well before the convective boundary while the MLT diffusion coefficient will not. A model for the diffusion coefficient that has been able to reproduce results from 3D hydro simulations is provided by \citep{4pi}. The formula for the diffusion coefficient is  
+\begin{equation}
+D_{hydro} = v_{MLT}min(\alphaMLT H_{p}, |r - r_{0}|)
+\label{eq:Jones}
+\end{equation} 
+
+\noindent where $r_{0} = r_{SC} - f_{CBM}H_{p}^{SC}$ which are quantities that are evaluated at the Schwarzschild boundary. This does not make major changes to the functionality and magnitude of the diffusion coefficient except that it falls off quicker when approaching the convective boundaries. This can be seen in \Figure{diffusion}. With the temperature being highest at the lower convective boundary (\Fig{neutron_sub}) and with using \EQ{Jones} for the diffusion coefficient rather than \EQ{diffusion_mlt}, there would be less matter diffusing to the higher temperatures of the lower boundary. The possible nucleosynthetic consequences of this are discussed in \Sect{branching} and shown in \Sect{zr_zr}.
+
+\subsection{\zirconium[95] and \iodine[128] Branching}
+\label{sec:branching}
+
+Within the \carbon[13] pocket, the reaction that causes the high neutron densities for the \spr is \carbon[13]($\alpha,n$)\oxygen[16]. The neutron densities do not reach N$_{n} \approx 5\ee{8}\power{\centi\meter}{-3}$ that are required to open the \zirconium[95] branch \citep{zr}. This causes a situation in which there is production of \zirconium[94] from the \spr but due to low neutron densities not as much \zirconium[96] is produced. This can be seen from the isotope mass fractions of Zirconium in \Fig{zr_ratio13C}. The \spr path and \zirconium[95] branch can be seen in \Figure{zr95}
+
+During the He-flash PDCZ temperatures get high enough for the \neon[22]($\alpha,n$)\magnesium[25] reaction to occur. Neutron densities can exceed the lower limit for the \zirconium[95] branching (\Fig{density}). This will shift the isotopic mass fractions of \zirconium[96] and \zirconium[94] to what is shown in \Figure{zr_ratioDil}. Their mass fractions dropped significantly due to the dilution of the \carbon[13] pocket into the PDCZ however the change in the ratio, log$_{10}$(\zirconium[96] / \zirconium[94]), went from -2.7 to -0.9. This is directly from the opening of the \zirconium[95] branch. This branch is only open for a very short amount of time as the neutron density is only larger than  $5\ee{8}\power{\centi\meter}{-3}$ for a few years (\Fig{density}) but its effects on the Zirconium isotopic ratios are significant. 
+
+To compare with the measurements made by \citep{grain}, the isotopic ratios need to be represented into the per mil, $\delta$, form. For a given isotopic ration, this is defined as
+\begin{equation}
+\delta\left(\zirconium[96] / \zirconium[94]\right) = [\left(\frac{\zirconium[96]}{\zirconium[94]} / \frac{\zirconium[96]_{\odot}}{\zirconium[94]_{\odot}}\right) - 1]\times 1000
+\label{eq:mil}
+\end{equation}
+
+\noindent The comparison of $\delta\left(\zirconium[96] / \zirconium[94]\right)$ from the pre-solar grains measured by \citep{grain} and what stellar evolution models predict from \citep{zr} is in \Figure{zr94}.
+
+The \iodine[128] isotope is unstable with a lifetime of only 25 minutes and it has two competing branches. These reactions are the $\beta^{-}$ decay, \iodine[128]($\beta^{-}$)\xenon[128] and the electron capture \iodine[128]($\beta^{+}$)\tellurium[128]. The electron capture branching is very sensitive to the temperature as well as the electron density \citep{reif}. \Figure{xe} shows all of the isotopes that play a role in the \iodine[128] branching. Within the He-flash PDCZ the temperature peaks very close to the lower convective boundary. With the convective time scale (\Sect{mppnp}) during the PDCZ being only a few hours, fresh \iodine[126] from the top of the convection zone will come to the bottom and can capture a neutron easily due to the very high neutron densities there. With the short half-life of \iodine[128],a significant portion of these will decay while being at the higher temperatures near the lower convective boundary. This will lead to a significant portion of the \iondine[128] to undergo \iodine[128]($\beta^{+}$)\tellurium[128] rather than \iodine[128]($\beta^{-}$)\xenon[128]. Since the \ppr is not occurring within the He-flash PDCZ, the only production of \xenon[128] comes from the \iodine[128]($\beta^{-}$)\xenon[128] and the losses are due to neutron captures. Because of this, the \xenon[128] / \xenon[130] ratio can be used as a tracer of what the dominating branch of \iodine[128] is.
+
+\subsection{\mppnp~Post Processing}
+\label{sec:mppnp}
+
+The nucleosynthesis that was calculated with the \mppnp code used a network of over 1000 isotopes and was limited by species that had a $\beta$ decay less than 
+To compute the nucleosynthesis that is occurring in the PDCZ, the \mppnp code was used. From \citep{models} the nucleosynthesis was already calculated for the 2\Msun, $Z=0.02$, stellar model with the default MLT diffusion coefficient. To calculate models with the diffusion coefficient from \EQ{Jones} the H5 files that the \MESA data was outputted to was modified. This was simply done with python and the \mppnp code could be run normally but it would have the modified diffusion coefficient.  
 \section{Results}
+\subsection{Effects on $\delta$(\zirconium[96] / \zirconium[94])}
+\label{sec:zr_zr}
 Simple mathematics can be inserted into the flow of the text e.g. $2\times3=6$
 or $v=220$\,km\,s$^{-1}$, but more complicated expressions should be entered
 as a numbered equation:
@@ -218,29 +277,30 @@ Refer back to them as e.g. equation~(\ref{eq:quadratic}).
 % c13 pocket zr ratio
 \begin{figure}
   \includegraphics[width=\columnwidth]{figs/C13_Zr.png}
-  \caption{Within the \carbon[13] pocket there is a significant amount of \zirconium[94] produced but almost no \zirconium[96]. This is due to the low neutron densities not opening the \zirconium[95] branch.} 
+  \caption{These isotope ratios are averaged across the \carbon[13] pocket. Within the \carbon[13] pocket there is a significant amount of \zirconium[94] produced but almost no \zirconium[96]. This is due to the low neutron densities not opening the \zirconium[95] branch. The logarithm base 10 of the \zirconium[96] / \zirconium[94] ratio is approximately -2.7} 
   \lFig{zr_ratio13C}
 \end{figure}
 
 % Zr ratio after pulse
 \begin{figure}
   \includegraphics[width=\columnwidth]{figs/Pulse_Zr.png}
-  \caption{After the \carbon[13] pocket is mixed into the He-flash pulse driven convection zone, the temperatures get high enough for the \neon[22]($\alpha,n$)\magnesium[25] reaction. This provides high enough neutron densities to open the \zirconium[95] branch and boost the \zirconium[96].} 
+  \caption{These isotope ratios are averaged across the He-flash PDCZ. After the \carbon[13] pocket is mixed into the He-flash pulse driven convection zone, the temperatures get high enough for the \neon[22]($\alpha,n$)\magnesium[25] reaction. This provides high enough neutron densities to open the \zirconium[95] branch and boost the \zirconium[96].The logarithm base 10 of the \zirconium[96] / \zirconium[94] ratio is approximately -0.9} 
   \lFig{zr_ratioDil}
-\end{figure}
-
-% Xe plot
-\begin{figure}
-	\includegraphics[width=\columnwidth]{figs/xe.png}
-    \caption{Another figure.}
-    \lFig{mass-O16}
 \end{figure}
 
 % Zr 95 branch
 \begin{figure}
 	\includegraphics[width=\columnwidth]{figs/Zr95_branch.png}
-    \caption{Another figure.}
+    \caption{In order for there to be significant production of \zirconium[96] the neutron densities must be high enough such that the \zirconium[95] (half-life 64 days) formed from the reaction \zirconium[94]($n,\gamma$)\zirconium[95] does not all decay to \niobium[95].}
     \lFig{zr95}
+\end{figure}
+
+
+% Xe plot
+\begin{figure}
+	\includegraphics[width=\columnwidth]{figs/xe.png}
+    \caption{The unstable isotope, \iodine[128], can either $\beta^{-}$ decay or capture an electron ($\beta^{+}$). The electron capture branching is very sensitive to the temperature. If it $\beta^{-}$ decays there will be production of \xenon[128] and with high neutron densities, \xenon[130] can be produced as well. If it captures an electron, it can capture neutrons and decay to end up at \xenon[130]. This figure is from \citep{reif}.}
+    \lFig{xe}
 \end{figure}
 
 % Zr 94 plot
@@ -253,7 +313,7 @@ Refer back to them as e.g. equation~(\ref{eq:quadratic}).
 % diffusion plot
 \begin{figure}
   \includegraphics[width=\columnwidth]{figs/Diffusion_compare.png}
-  \caption{This is a comparison between the diffusion coefficients} 
+  \caption{The MLT diffusion coefficient has a more flat profile between the convective boundaries while the diffusion coefficient given by \citep{4pi} (\Eq{Jones}) is about an order of magnitude smaller at the convective boundaries.} 
   \lFig{diffusion}
 \end{figure}
 
@@ -273,36 +333,10 @@ Refer back to them as e.g. equation~(\ref{eq:quadratic}).
 
 % sub time step neutron plots
 \begin{figure}
-\centering
-\begin{subfigure}[b]{1\columnwidth}
    \includegraphics[width=1\columnwidth]{figs/T_Neutron_sub.png}
    \lFig{neutron_sub}
-\end{subfigure}
-
-\begin{subfigure}[b]{1\columnwidth}
-   \includegraphics[width=1\columnwidth]{figs/T_Neutron_Sub_Closeup}
-   \lFig{neutron_sub_close}
-\end{subfigure}
-\caption{Testing}
 \end{figure}
 
-Another results is also good \Fig{mass-O16}.
-% Example table
-\begin{table}
-	\centering
-	\caption{This is an example table. Captions appear above each table.
-	Remember to define the quantities, symbols and units used.}
-	\lTab{example_table}
-	\begin{tabular}{lccr} % four columns, alignment for each
-		\hline
-		A & B & C & D\\
-		\hline
-		1 & 2 & 3 & 4\\
-		2 & 4 & 6 & 8\\
-		3 & 5 & 7 & 9\\
-		\hline
-	\end{tabular}
-\end{table}
 
 \section{Conclusions}
 

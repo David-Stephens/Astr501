@@ -7,45 +7,46 @@ Warning--I didn't find a database entry for "1996ApJ...456..902R"
 Warning--I didn't find a database entry for "cyburt:10"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 2 entries,
+Warning--empty publisher in cox
+You've used 9 entries,
             2881 wiz_defined-function locations,
-            765 strings with 6867 characters,
-and the built_in function-call counts, 939 in all, are:
-= -- 62
-> -- 77
-< -- 2
-+ -- 35
-- -- 12
-* -- 127
-:= -- 154
+            820 strings with 8701 characters,
+and the built_in function-call counts, 4645 in all, are:
+= -- 311
+> -- 423
+< -- 20
++ -- 181
+- -- 78
+* -- 594
+:= -- 779
 add.period$ -- 0
-call.type$ -- 2
-change.case$ -- 4
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 44
-empty$ -- 45
-format.name$ -- 18
-if$ -- 147
+call.type$ -- 9
+change.case$ -- 18
+chr.to.int$ -- 9
+cite$ -- 10
+duplicate$ -- 207
+empty$ -- 211
+format.name$ -- 102
+if$ -- 765
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 19
-num.names$ -- 12
-pop$ -- 10
+missing$ -- 10
+newline$ -- 40
+num.names$ -- 66
+pop$ -- 55
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 36
 quote$ -- 0
-skip$ -- 25
+skip$ -- 116
 stack$ -- 0
-substring$ -- 34
-swap$ -- 22
-text.length$ -- 8
+substring$ -- 196
+swap$ -- 124
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
-warning$ -- 0
-while$ -- 14
+type$ -- 78
+warning$ -- 1
+while$ -- 66
 width$ -- 0
-write$ -- 32
-(There were 2 warnings)
+write$ -- 102
+(There were 3 warnings)
